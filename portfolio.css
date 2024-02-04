@@ -221,7 +221,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .timeline {
         padding-left: 30px;
     }
@@ -318,7 +318,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #education .timeline {
         padding-left: 30px;
     }
