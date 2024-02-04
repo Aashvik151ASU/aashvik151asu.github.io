@@ -219,6 +219,9 @@ footer {
         right: 10px;
         text-align: left;
     }
+    nav ul {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
@@ -232,6 +235,9 @@ footer {
     
     .timeline-content {
         margin-left: 20px;
+    }
+    nav ul {
+        flex-direction: column;
     }
 }
 
@@ -316,6 +322,9 @@ footer {
         right: 10px;
         text-align: left;
     }
+    nav ul {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
@@ -329,6 +338,9 @@ footer {
 
     #education .timeline-content {
         margin-left: 20px;
+    }
+    nav ul {
+        flex-direction: column;
     }
 }
 
