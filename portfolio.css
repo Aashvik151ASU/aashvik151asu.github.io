@@ -124,7 +124,7 @@ footer {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 600px) {
     header nav ul li {
         display: block;
         margin: 10px 0;
@@ -222,7 +222,7 @@ footer {
 
 }
 
-@media (max-width: 300px) {
+@media (max-width: 600px) {
     .timeline {
         padding-left: 30px;
     }
@@ -368,7 +368,7 @@ footer {
     height: 400px;
     perspective: 1000px; 
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5); 
-    transition: box-shadow 0.3s ease-in-out; 
+    transition: box-shadow 0.1s ease-in-out; 
 }
 
 .project-card:hover {
