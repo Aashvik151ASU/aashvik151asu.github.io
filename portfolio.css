@@ -124,7 +124,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
     header nav ul li {
         display: block;
         margin: 10px 0;
@@ -222,7 +222,7 @@ footer {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
     .timeline {
         padding-left: 30px;
     }
