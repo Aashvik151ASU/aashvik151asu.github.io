@@ -273,25 +273,7 @@ body.dark-mode #moon-icon {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-    .skills-container {
-        justify-content: center;
-    }
-    .skill-item {
-        flex-basis: calc(50% - 20px); 
-    }
-}
-
-@media (max-width: 600px) {
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-    .skill-item {
-        flex-basis: calc(100% - 20px); 
-    }
-}
-
+/* Styles for Desktop */
 .timeline {
     position: relative;
     padding-left: 50px;
@@ -363,38 +345,6 @@ body.dark-mode #moon-icon {
     box-shadow: 0 4px 8px var(--timeline-content-hover-shadow);
 }
 
-@media (max-width: 768px) {
-    .timeline-content {
-        margin-left: 30%;
-    }
-    
-    .timeline-date-location {
-        top: 10px;
-        right: 10px;
-        text-align: left;
-    }
-}
-
-@media (max-width: 600px) {
-    .timeline {
-        padding-left: 20%;
-    }
-
-    .timeline::before {
-        left: 10%;
-    }
-    
-    .timeline-content {
-        margin-left: 40%;
-        padding-left: 5%; /* Adjust padding to avoid overlap */
-    }
-
-    .timeline-icon {
-        left: auto;
-        right: 10%;
-    }
-}
-
 #education .timeline {
     position: relative;
     padding-left: 50px;
@@ -457,38 +407,6 @@ body.dark-mode #moon-icon {
 #education .timeline-item:hover .timeline-content {
     transform: translateY(-3px);
     box-shadow: 0 4px 8px var(--timeline-content-hover-shadow);
-}
-
-@media (max-width: 768px) {
-    #education .timeline-content {
-        margin-left: 30%;
-    }
-
-    #education .timeline-date-location {
-        top: 10px;
-        right: 10px;
-        text-align: left;
-    }
-}
-
-@media (max-width: 600px) {
-    #education .timeline {
-        padding-left: 20%;
-    }
-
-    #education .timeline::before {
-        left: 10%;
-    }
-
-    #education .timeline-content {
-        margin-left: 40%;
-        padding-left: 5%; /* Adjust padding to avoid overlap */
-    }
-
-    #education .timeline-icon {
-        left: auto;
-        right: 10%;
-    }
 }
 
 .courses-heading {
@@ -573,12 +491,33 @@ body.dark-mode #moon-icon {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
     .skills-container {
         justify-content: center;
     }
     .skill-item {
         flex-basis: calc(50% - 20px); 
+    }
+
+    .timeline-content {
+        margin-left: 30%;
+    }
+    
+    .timeline-date-location {
+        top: 10px;
+        right: 10px;
+        text-align: left;
+    }
+
+    #education .timeline-content {
+        margin-left: 30%;
+    }
+
+    #education .timeline-date-location {
+        top: 10px;
+        right: 10px;
+        text-align: left;
     }
 }
 
@@ -590,14 +529,43 @@ body.dark-mode #moon-icon {
     .skill-item {
         flex-basis: calc(100% - 20px); 
     }
+
+    .timeline {
+        padding-left: 20%;
+    }
+
+    .timeline::before {
+        left: 10%;
+    }
+    
     .timeline-content {
-        margin-left: 70%;
+        margin-left: 40%;
         padding-left: 5%; /* Adjust padding to avoid overlap */
     }
+
     .timeline-icon {
         left: auto;
         right: 10%;
     }
+
+    #education .timeline {
+        padding-left: 20%;
+    }
+
+    #education .timeline::before {
+        left: 10%;
+    }
+
+    #education .timeline-content {
+        margin-left: 40%;
+        padding-left: 5%; /* Adjust padding to avoid overlap */
+    }
+
+    #education .timeline-icon {
+        left: auto;
+        right: 10%;
+    }
+
     .project-card {
         width: 100%; /* Full width on mobile */
         max-width: 100%; /* Ensure the card is not wider than the screen */
@@ -606,7 +574,7 @@ body.dark-mode #moon-icon {
 
 /* Light Mode Email Effect */
 body.light-mode #email a {
-    background: linear-gradient(to right, #6e788a, #082f5b);
+    background: linear-gradient(to right, #80899a, #0a4e9b);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
