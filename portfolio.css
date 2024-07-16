@@ -365,7 +365,7 @@ body.dark-mode #moon-icon {
 
 @media (max-width: 768px) {
     .timeline-content {
-        margin-left: 30px;
+        margin-left: 30%;
     }
     
     .timeline-date-location {
@@ -377,21 +377,21 @@ body.dark-mode #moon-icon {
 
 @media (max-width: 600px) {
     .timeline {
-        padding-left: 30px;
+        padding-left: 20%;
     }
 
     .timeline::before {
-        left: 15px;
+        left: 10%;
     }
     
     .timeline-content {
-        margin-left: 20px;
-        padding-left: 40px; /* Adjust padding to avoid overlap */
+        margin-left: 40%;
+        padding-left: 5%; /* Adjust padding to avoid overlap */
     }
 
     .timeline-icon {
         left: auto;
-        right: 0;
+        right: 10%;
     }
 }
 
@@ -461,7 +461,7 @@ body.dark-mode #moon-icon {
 
 @media (max-width: 768px) {
     #education .timeline-content {
-        margin-left: 30px;
+        margin-left: 30%;
     }
 
     #education .timeline-date-location {
@@ -469,23 +469,26 @@ body.dark-mode #moon-icon {
         right: 10px;
         text-align: left;
     }
-
 }
 
 @media (max-width: 600px) {
     #education .timeline {
-        padding-left: 30px;
+        padding-left: 20%;
     }
 
     #education .timeline::before {
-        left: 15px;
+        left: 10%;
     }
 
     #education .timeline-content {
-        margin-left: 20px;
-        padding-left: 40px; /* Adjust padding to avoid overlap */
+        margin-left: 40%;
+        padding-left: 5%; /* Adjust padding to avoid overlap */
     }
 
+    #education .timeline-icon {
+        left: auto;
+        right: 10%;
+    }
 }
 
 .courses-heading {
@@ -588,12 +591,12 @@ body.dark-mode #moon-icon {
         flex-basis: calc(100% - 20px); 
     }
     .timeline-content {
-        margin-left: 70px;
-        padding-left: 20px;
+        margin-left: 70%;
+        padding-left: 5%; /* Adjust padding to avoid overlap */
     }
     .timeline-icon {
         left: auto;
-        right: 0;
+        right: 10%;
     }
     .project-card {
         width: 100%; /* Full width on mobile */
@@ -603,7 +606,7 @@ body.dark-mode #moon-icon {
 
 /* Light Mode Email Effect */
 body.light-mode #email a {
-    background: linear-gradient(to right, #204093, #123a60);
+    background: linear-gradient(to right, #6e788a, #082f5b);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
