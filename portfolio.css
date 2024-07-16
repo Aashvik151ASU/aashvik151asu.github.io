@@ -386,6 +386,12 @@ body.dark-mode #moon-icon {
     
     .timeline-content {
         margin-left: 20px;
+        padding-left: 40px; /* Adjust padding to avoid overlap */
+    }
+
+    .timeline-icon {
+        left: auto;
+        right: 0;
     }
 }
 
@@ -477,6 +483,7 @@ body.dark-mode #moon-icon {
 
     #education .timeline-content {
         margin-left: 20px;
+        padding-left: 40px; /* Adjust padding to avoid overlap */
     }
 
 }
@@ -594,10 +601,9 @@ body.dark-mode #moon-icon {
     }
 }
 
-
 /* Light Mode Email Effect */
 body.light-mode #email a {
-    background: #004373;
+    background: linear-gradient(to right, #204093, #123a60);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
@@ -606,7 +612,7 @@ body.light-mode #email a {
 
 /* Dark Mode Email Effect */
 body.dark-mode #email a {
-    background: #007315;
+    background: linear-gradient(to right, #005f73, #0a9396);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
@@ -620,8 +626,6 @@ section#contact {
     margin: 20px 0;
     box-shadow: 0 2px 5px var(--card-shadow-color);
 }
-
-
 
 /* Light Mode Typing Effect */
 body.light-mode #typed-roles {
