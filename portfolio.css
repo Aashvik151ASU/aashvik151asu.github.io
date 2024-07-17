@@ -1,7 +1,7 @@
 :root {
     --background-color: #f4f4f4;
     --text-color: #333;
-    --header-background: linear-gradient(to right, #005f73, #0a9396);
+    --header-background: linear-gradient(to right, #80899a, #0a4e9b);
     --header-text-color: #fff;
     --skill-background: #005f73;
     --skill-text-color: #fff;
@@ -23,7 +23,7 @@
 body.light-mode {
     --background-color: #f4f4f4;
     --text-color: #333;
-    --header-background: linear-gradient(to right, #005f73, #0a9396);
+    --header-background: linear-gradient(to right, #80899a, #0a4e9b);
     --header-text-color: #fff;
     --skill-background: linear-gradient(to right, #005f73, #0a9396);
     --skill-text-color: #fff;
