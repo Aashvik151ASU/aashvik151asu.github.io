@@ -339,7 +339,7 @@ section h2 {
 .project-card-back {
     background: var(--project-card-back-background);
     color: var(--project-card-back-text-color);
-    font-size: 0.5rem;
+    font-size: 0.55rem;
     opacity: 0;
     transform: translateY(20px);
     z-index: 1;
@@ -377,6 +377,107 @@ section h2 {
     left: 0;
     color: var(--project-card-back-text-color);
     font-weight: bold;
+}
+
+/* Recommendations Section */
+.recommendations-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.recommendation-card {
+    background: var(--timeline-background);
+    color: var(--timeline-text-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--card-shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--skill-background);
+}
+
+.recommendation-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px var(--timeline-content-hover-shadow);
+}
+
+.recommendation-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.recommender-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--skill-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: 2px solid var(--skill-background);
+}
+
+.recommender-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar-initials {
+    color: var(--skill-text-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.recommender-info {
+    flex: 1;
+}
+
+.recommender-info h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    color: var(--timeline-text-color);
+}
+
+.recommender-title {
+    margin: 0 0 0.25rem 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--timeline-text-color);
+    opacity: 0.8;
+}
+
+.recommender-company {
+    margin: 0 0 0.25rem 0;
+    font-size: 0.85rem;
+    color: var(--timeline-text-color);
+    opacity: 0.7;
+}
+
+.recommendation-date {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--timeline-text-color);
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.recommendation-text {
+    line-height: 1.6;
+}
+
+.recommendation-text p {
+    margin: 0;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--timeline-text-color);
+    opacity: 0.9;
 }
 
 /* Contact Section */
@@ -569,6 +670,48 @@ body.dark-mode #moon-icon {
         font-size: 0.5rem;
     }
 
+    .recommendations-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .recommendation-card {
+        padding: 1rem;
+    }
+
+    .recommendation-header {
+        gap: 0.75rem;
+    }
+
+    .recommender-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .avatar-initials {
+        font-size: 0.9rem;
+    }
+
+    .recommender-info h3 {
+        font-size: 1rem;
+    }
+
+    .recommender-title {
+        font-size: 0.8rem;
+    }
+
+    .recommender-company {
+        font-size: 0.75rem;
+    }
+
+    .recommendation-date {
+        font-size: 0.7rem;
+    }
+
+    .recommendation-text p {
+        font-size: 0.85rem;
+    }
+
     #theme-toggle {
         width: 45px;
         height: 45px;
@@ -614,6 +757,44 @@ body.dark-mode #moon-icon {
     nav ul li a {
         font-size: 0.8rem;
         padding: 0.3rem 0.6rem;
+    }
+
+    .recommendations-container {
+        gap: 0.8rem;
+    }
+
+    .recommendation-card {
+        padding: 0.8rem;
+    }
+
+    .recommender-avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .avatar-initials {
+        font-size: 0.8rem;
+    }
+
+    .recommender-info h3 {
+        font-size: 0.9rem;
+    }
+
+    .recommender-title {
+        font-size: 0.75rem;
+    }
+
+    .recommender-company {
+        font-size: 0.7rem;
+    }
+
+    .recommendation-date {
+        font-size: 0.65rem;
+    }
+
+    .recommendation-text p {
+        font-size: 0.8rem;
+        line-height: 1.5;
     }
 }
 
