@@ -561,12 +561,22 @@ body.dark-mode #moon-icon {
 }
 
 /* Typing Animation */
-#typed-roles {
+/* Light Mode Typing Effect */
+body.light-mode #typed-roles {
     font-weight: bold;
-    background: linear-gradient(to right, #005f73, #0a9396);
+    background: linear-gradient(to right, #415883, #0a4e9b);
     -webkit-background-clip: text;
-    background-clip: text;
     color: transparent;
+    animation: pulse 1s infinite;
+}
+
+/* Dark Mode Typing Effect */
+body.dark-mode #typed-roles {
+    font-weight: bold;
+    background: linear-gradient(to right, #005f73, #0a9396); /* Light colors for dark mode */
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: pulse 1s infinite;
 }
 
 #cursor {
